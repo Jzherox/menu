@@ -7,6 +7,11 @@ function numeros_pares_entre_AB() {
         output_console(`<strong>Consola: Ingresa un valor final mayor que ${A}.</strong>`)
         return
     }
+
+    output_console("<strong>============================================</strong>")
+    output_console(`<strong>Numeros pares entre el ${A} al ${B}:</strong>`)
+    output_console("<strong>============================================</strong>")
+
     for (let i = (A+1); i < B; i++) {
         if (i % 2 == 0) {
             output_console(i)

@@ -7,8 +7,11 @@ function tabla_de_sumar() {
         output_console('<strong>Consola: Ingresa un incremento para la suma (mayor a 0).</strong>')
         return
     }
-    output_console(`Tabla de sumar del ${increase} desde el 1 hasta el ${number}`)
-    output_console('============================================')
+
+    output_console("<strong>============================================</strong>")
+    output_console(`<strong>Tabla de sumar del ${increase} desde el 1 hasta el ${number}:</strong>`)
+    output_console("<strong>============================================</strong>")
+
     for (let i = 1; i <= number; i++) {
         let addition = i + increase
         output_console(`${i} + ${increase} = ${addition}`)

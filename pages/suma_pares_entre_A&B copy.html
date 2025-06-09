@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo_form.css">
-    <title>Tabla de Sumar</title>
+    <title>Sumar Pares Entre A y B</title>
 </head>
 <body>
     <div>
         <div class="container">
-            <h1>Tabla de Sumar</h1>
+            <h1>Suma de Numeros Pares Entre A y B</h1>
             <form action="../menu.html">
                 <div class="form-group">
-                    <label for="incremento">Incremento:</label>
-                    <input type="text" id="incremento" name="incremento" placeholder="Ingresa el Incremento">
+                    <label for="varA">inicio:</label>
+                    <input type="text" id="varA" name="varA" placeholder="Ingresa el valor inicial">
                 </div>
                 <div class="form-group">
-                    <label for="numero">Limite:</label>
-                    <input type="text" id="numero" name="numero" placeholder="Ingresa el numero final de la tabla">
+                    <label for="varB">final:</label>
+                    <input type="text" id="varB" name="varB" placeholder="Ingresa el valor final">
                 </div>
                 <div class="resultado">
-                    <strong>Resultado:</strong> Se presentaran los numeros sumados con el incremento desde el 1 hasta el numero final ingresado.
+                    <strong>Resultado:</strong> Se presentaran la suma de los numeros pares que se encuentran entre A y B.
                 </div>
                 <div class="button-group">
-                    <button type="button" onclick="tabla_de_sumar()" class="btn-primary">
+                    <button type="button" onclick="suma_pares_AB()" class="btn-primary">
                         <span>Iniciar</span>
                     </button>
                     <button type="reset" onclick="limpiar_consola()" class="btn-secondary">
@@ -41,7 +41,7 @@
         </div>
     </div>
 </body>
-    <script src="../js/tabla_de_sumar.js"></script>
+    <script src="../js/suma_pares_entre_A&B.js"></script>
     <script src="../js/consola.js"></script>
     <script src="https://kit.fontawesome.com/a4a2433d2c.js" crossorigin="anonymous"></script>
 </html>

@@ -5,6 +5,11 @@ function serie_numerica() {
         output_console('<strong>Consola: Ingresa un numero (mayor a 1).</strong>')
         return
     }
+
+    output_console("<strong>============================================</strong>")
+    output_console(`<strong>Mostrando numeros del 1 al ${number}:</strong>`)
+    output_console("<strong>============================================</strong>")
+
     for (let i = 1; i <= number; i++) {
         output_console(i)
     }

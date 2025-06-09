@@ -7,6 +7,15 @@ function repetir_nombre() {
         output_console('<strong>Consola: Debes ingresar un nombre.</strong>')
         return
     }
+
+    output_console("<strong>============================================</strong>")
+    if (times === 1) {
+        output_console(`<strong>Mostrando "${name}", ${times} vez:</strong>`)
+    } else {
+        output_console(`<strong>Mostrando "${name}", ${times} veces:</strong>`)
+    }
+    output_console("<strong>============================================</strong>")
+    
     for (let i = 1; i <= times; i++) {
         output_console(`${i}. ${name}`)
     }
