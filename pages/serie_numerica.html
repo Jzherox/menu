@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo_form.css">
+    <title>Numeros del 1 a N</title>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h1>Mostrar numeros</h1>
+            <form action="../menu.html">
+                <div class="form-group">
+                    <label for="numero">Limite:</label>
+                    <input type="text" id="numero" name="numero" value="1">
+                </div>
+                <div class="resultado">
+                    <strong>Resultado:</strong> Se presentara una serie numerica desde el 1 hasta el numero ingresado.
+                </div>
+                <div class="button-group">
+                    <button type="button" onclick="serie_numerica()" class="btn-primary">
+                        <span>Iniciar</span>
+                    </button>
+                    <button type="reset" onclick="limpiar_consola()" class="btn-secondary">
+                        <span>Limpiar</span>
+                    </button>
+                    <button type="submit" class="btn-secondary">
+                        <span>Volver</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="console">
+            <h3><i class="fa-solid fa-terminal"></i> Consola</h3>
+            <div id="output"></div>
+        </div>
+    </div>
+</body>
+    <script src="../js/serie_numerica.js"></script>
+    <script src="../js/consola.js"></script>
+    <script src="https://kit.fontawesome.com/a4a2433d2c.js" crossorigin="anonymous"></script>
+</html>
+

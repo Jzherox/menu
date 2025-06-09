@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo_form.css">
+    <title>Multiplos de 3 del 1 a N</title>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <h1>Tabla de Sumar</h1>
+            <form action="../menu.html">
+                <div class="form-group">
+                    <label for="incremento">Incremento:</label>
+                    <input type="text" id="incremento" name="incremento" placeholder="Ingresa el Incremento">
+                </div>
+                <div class="form-group">
+                    <label for="numero">Limite:</label>
+                    <input type="text" id="numero" name="numero" placeholder="Ingresa el numero final de la tabla de sumar">
+                </div>
+                <div class="resultado">
+                    <strong>Resultado:</strong> Se presentaran los numeros sumados con el incremento desde el 1 hasta el numero ingresado.
+                </div>
+                <div class="button-group">
+                    <button type="button" onclick="tabla_de_sumar()" class="btn-primary">
+                        <span>Iniciar</span>
+                    </button>
+                    <button type="reset" onclick="limpiar_consola()" class="btn-secondary">
+                        <span>Limpiar</span>
+                    </button>
+                    <button type="submit" class="btn-secondary">
+                        <span>Volver</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="console">
+            <h3><i class="fa-solid fa-terminal"></i> Consola</h3>
+            <div id="output"></div>
+        </div>
+    </div>
+</body>
+    <script src="../js/tabla_de_sumar.js"></script>
+    <script src="../js/consola.js"></script>
+    <script src="https://kit.fontawesome.com/a4a2433d2c.js" crossorigin="anonymous"></script>
+</html>
+
